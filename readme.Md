@@ -1,6 +1,8 @@
 # Ingress Controller
 
 ### Create an IAM OIDC provider
+trust and authentication provider
+
 CLUSTER_NAME=roboshop
 REGION_CODE=us-east-1
 ACCOUNT_ID=235270182665
@@ -29,6 +31,7 @@ aws iam create-policy \
 ```
 
 ### Create an IAM role and Kubernetes ServiceAccount
+Mapping between IAM role and k8 service account
 
 ```
 eksctl create iamserviceaccount \
